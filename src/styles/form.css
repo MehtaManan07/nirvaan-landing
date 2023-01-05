@@ -1,0 +1,467 @@
+form#application-form {
+    width: 100%;
+    height: 100vh
+}
+
+.form-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.form-content {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-bottom: 120px
+}
+
+.form-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1c1a22;
+    margin: 50px 0;
+    text-align: left
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 800px
+}
+
+.form-div-100 {
+    width: 100%
+}
+
+.form-label {
+    outline: 0;
+    background: 0 0;
+    border: 0;
+    padding: 8px 0;
+    color: #1c1a22;
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 16px
+}
+
+.form-label.sub-caption {
+    font-size: 16px;
+    margin-top: 8px
+}
+
+.form-input {
+    outline: 0;
+    background: 0 0;
+    border: 0;
+    padding: 8px 0;
+    color: #1c1a22;
+    font-size: 60px;
+    font-weight: 700;
+    width: 100%
+}
+
+.form-input::placeholder {
+    color: #1c1a22;
+    font-size: 60px;
+    font-weight: 700;
+    opacity: .6
+}
+
+.form-input::-ms-input-placeholder {
+    color: #1c1a22;
+    font-size: 30px;
+    font-weight: 700;
+    opacity: .6
+}
+
+.form-input::-ms-input-placeholder {
+    color: #1c1a22;
+    font-size: 30px;
+    font-weight: 700;
+    opacity: .6
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0
+}
+
+input[type=radio] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0
+}
+
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+input[type=file].form-input::file-selector-button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: #2b80ff;
+    transition: 1s;
+    cursor: pointer
+}
+
+.form-button {
+    border: 1px #ffffff solid;
+    border-radius: 50px;
+    padding: 12px 43px;
+    font-size: 20px;
+    background: #ffffff;
+    color: #1c1a22;
+    cursor: pointer;
+    /* box-shadow: 0 0 11px 6px #5a5a62; */
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.form-button.button-transparent {
+    border: 1px #1c1a22 solid;
+    background: none;
+    color: #1c1a22;
+}
+
+.form-error {
+    display: none;
+    font-size: 18px;
+    color: red
+}
+
+.form-error.show-error {
+    display: flex
+}
+
+.form-file-select {
+    cursor: pointer
+}
+
+.form-file-select .form-label {
+    color: #2b80ff
+}
+
+.form-file-selected {
+    font-size: 29px;
+    font-weight: 700;
+    color: #2b80ff;
+    text-align: left
+}
+
+.success-text {
+    color: #45d195;
+    font-size: 30px
+}
+
+.success-text {
+    color: #45d195;
+    font-size: 30px
+}
+
+.loading-text {
+    color: #eaf0ed;
+    font-size: 30px
+}
+
+.success-desc {
+    color: #727070;
+    font-size: 16px
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.form-button span {
+    margin-right: 16px
+}
+
+.page-count {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 48px!important;
+    transition: all .4s ease
+}
+
+.page-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1c1a22;
+    height: 5px;
+    transition: all .4s ease
+}
+
+.hint-button {
+    border-radius: 25px;
+    cursor: pointer;
+    border: 0
+}
+
+.hint-text {
+    font-size: 14px;
+    color: #727070;
+    font-weight: 300;
+    transition: all 1s ease
+}
+
+.laptop-text {
+    color: #2b80ff;
+    font-size: 24px
+}
+
+@media only screen and (max-width: 980px) {
+    .modal-content {
+        padding:32px
+    }
+
+    .form-file-selected {
+        font-size: 25px
+    }
+
+    .form-label {
+        font-size: 18px
+    }
+
+    .form-label.sub-caption {
+        font-size: 14px
+    }
+
+    .form-input {
+        font-size: 40px
+    }
+
+    .form-input::placeholder {
+        font-size: 40px
+    }
+
+    .form-button {
+        padding: 12px 20px;
+        font-size: 18px
+    }
+
+    .form-div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%
+    }
+
+    .success-text {
+        font-size: 24px
+    }
+
+    .loading-text {
+        font-size: 24px
+    }
+
+    .page-count {
+        font-size: 32px!important
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .modal-content {
+        padding:16px
+    }
+
+    .form-file-selected {
+        font-size: 21px
+    }
+
+    .form-label {
+        font-size: 14px
+    }
+
+    .form-label.sub-caption {
+        font-size: 12px
+    }
+
+    .form-input {
+        font-size: 30px
+    }
+
+    .form-input::placeholder {
+        font-size: 30px
+    }
+
+    .form-button {
+        padding: 10px 16px;
+        font-size: 14px
+    }
+
+    .form-div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%
+    }
+
+    .success-text {
+        font-size: 18px
+    }
+
+    .loading-text {
+        font-size: 18px
+    }
+
+    .page-count {
+        top: 8px;
+        height: 4px;
+        font-size: 32px!important
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+input[type="checkbox"],
+	input[type="radio"] {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		/* display: block; */
+		float: left;
+		margin-right: -2em;
+		opacity: 0;
+		width: 1em;
+        z-index: -1;
+        display: inline-flex;
+        align-items: center;
+	}
+
+		input[type="checkbox"] + label,
+		input[type="radio"] + label {
+			text-decoration: none;
+			color: #1c1a22;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 1em;
+			font-weight: normal;
+			padding-left: 2.4em;
+			padding-right: 0.75em;
+			position: relative;
+		}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+			}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				background: rgba(255, 255, 255, 0.05);
+				border-radius: 0.25em;
+				border: solid 1px #1c1a22;
+				content: '';
+				display: inline-block;
+				font-size: 0.8em;
+				height: 2.0625em;
+				left: 0;
+				line-height: 2.0625em;
+				position: absolute;
+				text-align: center;
+				top: 0;
+				width: 2.0625em;
+			}
+
+		input[type="checkbox"]:checked + label:before,
+		input[type="radio"]:checked + label:before {
+			background: #ffffff;
+			border-color: #1c1a22;
+			/* color: #b74e91; */
+			/* content: '\f00c'; */
+		}
+
+		input[type="checkbox"]:focus + label:before,
+		input[type="radio"]:focus + label:before {
+			border-color: #ffffff;
+			box-shadow: 0 0 0 1px #1c1a22;
+		}
+
+	input[type="checkbox"] + label:before {
+		border-radius: 0.25em;
+	}
+
+	input[type="radio"] + label:before {
+		border-radius: 100%;
+    }
+    
+
+    label {
+		color: #1c1a22;
+		font-weight: bold;
+		line-height: 1.5;
+		margin: 0 0 0.7em 0;
+		display: block;
+		font-size: 1.1em;
+    }
+    
+    .fade-out-left {
+        -webkit-animation: fade-out-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: fade-out-left 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    /* ----------------------------------------------
+ * Generated by Animista on 2021-8-22 4:17:12
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-out-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-50px);
+              transform: translateX(-50px);
+      opacity: 0;
+    }
+  }
+  

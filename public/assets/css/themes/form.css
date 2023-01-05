@@ -1,0 +1,20 @@
+:root {
+    --color-primary: #ac3434;
+    --color-secondary: #DBDBDB;
+    --color-gradient-start: #e77c7c;
+    --color-gradient-stop: #ac3434;
+    --color-gradient-start-secondary: #F8DFBF;
+    --color-gradient-stop-secondary: #F2C082;
+    --color-gradient-start-tertiary: #48da9d;
+    --color-gradient-stop-tertiary: #ffffff;
+  }
+
+  
+  .bg-gradient-secondary-rl {
+    background: -webkit-gradient(linear, right top, left top, from(var(--color-gradient-start-secondary)), to(var(--color-gradient-stop-secondary))) !important;
+    background: linear-gradient(to left, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+  }
+
+  body {
+    margin: 0px;
+  }
